@@ -147,7 +147,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/wesley/projetos/conectar/Teste-NestJS-e-Flutter-Gerenciamento-de-Usuarios/server/generated/prisma",
+      "value": "/home/projetos/conectar/Conectar-NestJS-Test-server/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -161,7 +161,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/wesley/projetos/conectar/Teste-NestJS-e-Flutter-Gerenciamento-de-Usuarios/server/prisma/schema.prisma",
+    "sourceFilePath": "/home/wesley/projetos/conectar/Teste-NestJS-e-Flutter-Gerenciamento-de-Usuarios/Conectar-NestJS-Test-server/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
