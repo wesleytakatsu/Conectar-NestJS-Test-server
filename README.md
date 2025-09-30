@@ -30,6 +30,14 @@ Ou baixe uma versão release aqui no GitHub.
 - Email: `admin@conectar.com`
 - Senha: `admin123`
 
+* OBS: Login com o Google disponível só no Android.
+Na versão Web só se rodar em ambiente local com as credenciais que eu posso passar por ter chaves confidenciais.
+Na Cloudflare Pages grátis não é permitido usar Oauth do Google.
+
+Meu contato do WhatsApp: (21) 97526-3910
+  
+---
+  
 **URLs importantes:**
 - API: `http://localhost:3010`
 - Swagger UI: `http://localhost:3010/api`
