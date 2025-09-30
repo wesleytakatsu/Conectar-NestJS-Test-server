@@ -1,4 +1,4 @@
-# 🚀 Conectar Server - Sistema de Gerenciamento de Usuários NestJS
+# 🚀 Conéctar Server - Sistema de Gerenciamento de Usuários NestJS
 
 <div align="center">
   
