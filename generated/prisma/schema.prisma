@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(cuid())
+  name      String
+  email     String    @unique
+  password  String? // Pode ser null para usuários que só usam Google
+  role      String    @default("user") // "admin" or "user"
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  lastLogin DateTime?
+
+  // Campos específicos para login com Google
+  googleId     String? @unique // ID único do Google
+  photoURL     String? // URL da foto do perfil do Google
+  isGoogleUser Boolean @default(false) // Indica se o usuário usa login do Google
+}
+
+model Company {
+  id           String   @id @default(cuid())
+  razaoSocial  String
+  nomeFantasia String?
+  cnpj         String   @unique
+  email        String?
+  telefone     String?
+  endereco     String?
+  cidade       String?
+  estado       String?
+  cep          String?
+  status       String   @default("ativo") // "ativo" ou "inativo"
+  conectaPlus  Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
